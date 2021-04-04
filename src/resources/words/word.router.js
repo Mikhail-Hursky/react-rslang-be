@@ -29,7 +29,7 @@ router.route('/group').get(async (req, res) => {
       'Wrong query parameters: the group, page numbers should be valid integers'
     );
   }
-  const words = await wordService.getAll({
+  const words = await wordService.getAllGroup({
     group
   });
   res.status(OK).send(words.map(word => word.toResponse()));
