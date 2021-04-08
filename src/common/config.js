@@ -11,7 +11,7 @@ module.exports = {
   MONGO_CONNECTION_STRING: process.env.MONGO_CONNECTION_STRING,
   AUTH_MODE: process.env.AUTH_MODE === 'true',
   MAX_SYMBOLS_PER_OBJECT: 10000,
-  MAX_OPTIONAL_PROPERTIES: 100,
+  MAX_OPTIONAL_PROPERTIES: 3600,
   MIN_PASSWORD_LENGTH: 8,
   LOGS_DIR: path.join(__dirname, '../../logs'),
   JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
